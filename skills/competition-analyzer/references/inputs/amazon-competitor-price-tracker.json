@@ -1,0 +1,9 @@
+{
+  "referenceAsin": "B0DEMO0001",
+  "competitorAsins": [
+    "B0DEMO0002"
+  ],
+  "country": "US",
+  "maxCompetitors": 1,
+  "alertUndercutPercent": 5
+}

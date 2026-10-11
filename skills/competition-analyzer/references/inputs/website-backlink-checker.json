@@ -1,0 +1,11 @@
+{
+  "targets": [
+    "example.com"
+  ],
+  "mode": "backlinks",
+  "maxResults": 5,
+  "dofollowOnly": false,
+  "excludeLost": true,
+  "includeSubdomains": true,
+  "excludeInternalBacklinks": true
+}

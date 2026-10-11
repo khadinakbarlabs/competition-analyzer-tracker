@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "trustpilot-reviews-scraper: credential-free recipe input subset",
+  "type": "object",
+  "properties": {
+    "companyIdentifiers": {
+      "type": "array"
+    },
+    "maxReviewsPerCompany": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "filterStars": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      }
+    },
+    "filterLanguage": {
+      "type": "string"
+    },
+    "filterDateRange": {
+      "type": "string",
+      "enum": [
+        "",
+        "last30days",
+        "last3months",
+        "last6months",
+        "last12months"
+      ]
+    },
+    "sortBy": {
+      "type": "string",
+      "enum": [
+        "recency",
+        "relevance"
+      ]
+    },
+    "onlyVerified": {
+      "type": "boolean"
+    },
+    "onlyWithReplies": {
+      "type": "boolean"
+    },
+    "includeCompanyInfo": {
+      "type": "boolean"
+    }
+  },
+  "required": [],
+  "additionalProperties": false
+}

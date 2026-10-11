@@ -1,0 +1,5 @@
+interface:
+  display_name: Competitor Discovery
+  short_description: Qualify rivals, alternatives and substitutes
+  default_prompt: Use $competitor-discovery to help me with this competitor research
+    task, using supplied evidence first.

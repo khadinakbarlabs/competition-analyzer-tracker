@@ -1,0 +1,26 @@
+{
+  "name": "competition-analyzer-tracker",
+  "version": "0.1.1",
+  "description": "Competitive intelligence for Claude Code: discover competitors, compare pricing and features, analyze customer reviews and SEO evidence, create source-linked sales battlecards, and track meaningful changes with saved watchlists. Uses your Apify account and Khadin Akbar's Actors through the official Apify CLI. Existing exports work offline; recurring collection requires an authorized scheduler.",
+  "author": {
+    "name": "Khadin Akbar",
+    "url": "https://www.khadinakbar.com",
+    "email": "hello@khadinakbar.com"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Competition Analyzer & Tracker",
+    "shortDescription": "Competitor research & tracking",
+    "longDescription": "Research competitors and turn scattered public evidence into practical decisions. Discover relevant rivals, compare subscription pricing and matched ecommerce offers, analyze sampled customer reviews, investigate search visibility and organic traffic estimates, and create balanced sales battlecards with dated sources. Save watchlists and compare like-for-like snapshots to identify meaningful changes while separating missing data, failed sources and changed collection context.\n\nSeven focused skills run in Claude Code with local files. Live research uses the independently installed official Apify CLI, your own Apify account and Khadin Akbar's public Actors. Selected URLs, domains, queries and collection settings are sent to Apify and the selected upstream providers. Actor runs are billable and use approved scope and supported charge caps. Existing exports can be analyzed offline.\n\nA contained helper validates evidence and creates HTML or Markdown reports without network access, external assets or telemetry. Measurements, estimates, vendor claims and hypotheses remain labelled. Saved tracking state does not activate a recurring task: automated collection and analysis need a supported scheduler, explicit frequency and spending authorization, and verified activation.",
+    "developerName": "Khadin Akbar",
+    "category": "Productivity",
+    "capabilities": [],
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png",
+    "defaultPrompt": [
+      "Analyze my competitor exports and build a cited comparison.",
+      "Compare my saved snapshots and explain meaningful changes.",
+      "Create a sales battlecard from these public product and review exports."
+    ]
+  }
+}

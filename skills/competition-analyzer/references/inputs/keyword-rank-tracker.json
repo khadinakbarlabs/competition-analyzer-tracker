@@ -1,0 +1,12 @@
+{
+  "targetDomain": "example.com",
+  "keywords": [
+    "demo team chat"
+  ],
+  "locationCode": 2840,
+  "languageCode": "en",
+  "device": "desktop",
+  "os": "windows",
+  "depth": 10,
+  "maxKeywords": 1
+}

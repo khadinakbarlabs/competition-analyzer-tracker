@@ -1,0 +1,5 @@
+interface:
+  display_name: Competitor SEO Analysis
+  short_description: Compare sampled search and backlink evidence
+  default_prompt: Use $competitor-seo-analysis to help me with this competitor research
+    task, using supplied evidence first.

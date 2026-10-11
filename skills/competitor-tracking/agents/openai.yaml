@@ -1,0 +1,5 @@
+interface:
+  display_name: Competitor Tracking
+  short_description: Compare saved snapshots and meaningful changes
+  default_prompt: Use $competitor-tracking to help me with this competitor research
+    task, using supplied evidence first.

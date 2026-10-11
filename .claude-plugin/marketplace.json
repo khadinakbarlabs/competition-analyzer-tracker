@@ -1,0 +1,37 @@
+{
+  "name": "competition-intelligence-tools",
+  "owner": {
+    "name": "Khadin Akbar",
+    "url": "https://www.khadinakbar.com",
+    "email": "hello@khadinakbar.com"
+  },
+  "plugins": [
+    {
+      "name": "competition-analyzer-tracker",
+      "source": "./",
+      "description": "Competitive intelligence for Claude Code: discover competitors, compare pricing and features, analyze customer reviews and SEO evidence, create source-linked sales battlecards, and track meaningful changes with saved watchlists. Uses your Apify account and Khadin Akbar's Actors through the official Apify CLI. Existing exports work offline; recurring collection requires an authorized scheduler.",
+      "version": "0.1.1",
+      "author": {
+        "name": "Khadin Akbar",
+        "url": "https://www.khadinakbar.com",
+        "email": "hello@khadinakbar.com"
+      },
+      "license": "MIT",
+      "keywords": [
+        "competitor analysis",
+        "competitive intelligence",
+        "competitor tracking",
+        "pricing analysis",
+        "market research",
+        "sales battlecards",
+        "review analysis",
+        "competitor SEO",
+        "Apify",
+        "Claude Code"
+      ]
+    }
+  ],
+  "metadata": {
+    "description": "Competitive intelligence skills for competitor research, pricing comparisons, sales battlecards and saved tracking."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "competition-analyzer-tracker",
+  "displayName": "Competition Analyzer & Tracker",
+  "version": "0.1.1",
+  "description": "Competitive intelligence for Claude Code: discover competitors, compare pricing and features, analyze customer reviews and SEO evidence, create source-linked sales battlecards, and track meaningful changes with saved watchlists. Uses your Apify account and Khadin Akbar's Actors through the official Apify CLI. Existing exports work offline; recurring collection requires an authorized scheduler.",
+  "author": {
+    "name": "Khadin Akbar",
+    "url": "https://www.khadinakbar.com",
+    "email": "hello@khadinakbar.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "competitor analysis",
+    "competitive intelligence",
+    "competitor tracking",
+    "pricing analysis",
+    "market research",
+    "sales battlecards",
+    "review analysis",
+    "competitor SEO",
+    "Apify",
+    "Claude Code"
+  ],
+  "icon": "./assets/icon.png"
+}

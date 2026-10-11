@@ -1,0 +1,29 @@
+{
+  "name": "competition-analyzer-tracker",
+  "version": "0.1.1",
+  "description": "Evidence-led competitor analysis, pricing research, sales battlecards and saved watchlist comparisons for Claude Code.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "author": "Khadin Akbar",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs"
+  },
+  "files": [
+    "plugin.json",
+    ".claude-plugin",
+    ".codex-plugin",
+    "skills",
+    "assets",
+    "README.md",
+    "LICENSE",
+    "PRIVACY.md",
+    "TERMS.md",
+    "SECURITY.md",
+    "SUPPORT.md",
+    "CHANGELOG.md"
+  ]
+}

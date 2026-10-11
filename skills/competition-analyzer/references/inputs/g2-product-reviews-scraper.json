@@ -1,0 +1,12 @@
+{
+  "startUrls": [
+    {
+      "url": "https://www.g2.com/products/example-product/reviews"
+    }
+  ],
+  "maxReviewsPerProduct": 10,
+  "maxProductsPerSearch": 1,
+  "includeReviews": true,
+  "sortReviewsBy": "newest",
+  "debug": false
+}

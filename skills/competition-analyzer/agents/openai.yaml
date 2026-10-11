@@ -1,0 +1,5 @@
+interface:
+  display_name: Competition Analyzer
+  short_description: Build cited competitive research reports
+  default_prompt: Use $competition-analyzer to help me with this competitor research
+    task, using supplied evidence first.

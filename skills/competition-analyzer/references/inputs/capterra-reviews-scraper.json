@@ -1,0 +1,12 @@
+{
+  "startUrls": [
+    {
+      "url": "https://www.capterra.com/p/000000/Example-Product/reviews/"
+    }
+  ],
+  "maxReviewsPerProduct": 10,
+  "maxProductsPerSearch": 1,
+  "includeReviews": true,
+  "sortReviewsBy": "newest",
+  "debug": false
+}

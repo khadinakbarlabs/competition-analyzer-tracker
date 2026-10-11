@@ -1,0 +1,15 @@
+{
+  "startUrls": [
+    "https://example.com/pricing"
+  ],
+  "crawlScope": "page-only",
+  "maxPages": 1,
+  "maxDepth": 0,
+  "includeHtml": false,
+  "removeSelectors": [
+    "nav",
+    "footer"
+  ],
+  "respectRobotsTxt": true,
+  "maxConcurrency": 1
+}

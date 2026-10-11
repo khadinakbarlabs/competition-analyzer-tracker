@@ -1,0 +1,9 @@
+.DS_Store
+node_modules/
+dist/
+evals/results/
+*.log
+.env
+.env.*
+private/
+new-demo-report.html
