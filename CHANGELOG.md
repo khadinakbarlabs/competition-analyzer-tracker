@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3 — 2026-10-11
+
+Remove the helper's unnecessary `node:net` import. The built-in URL parser already normalizes IPv4 aliases and brackets IPv6 literals; explicit checks preserve the existing exclusion of IP-based source links. Add characterization tests for hexadecimal, decimal, octal, shorthand and mapped address forms, plus valid domain labels containing digits. All 29 local tests pass. No network or credential-reading capability is added.
+
 ## 0.1.2 — 2026-10-11
 
 Public source distribution approved by Khadin. Add verified GitHub documentation, support, privacy and terms links to the directory metadata and publish installation instructions. The skills and helper are unchanged from the locally tested 0.1.1 candidate. Authenticated Claude task tests, paid Actor acceptance and Anthropic review remain separately recorded in `docs/VALIDATION.md`.

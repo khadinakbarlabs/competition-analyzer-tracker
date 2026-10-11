@@ -1,6 +1,6 @@
 # Terms — Competition Analyzer & Tracker
 
-Prepared 2026-10-11 for version 0.1.2. The packaged skills and helper are provided by Khadin Akbar under the accompanying MIT License, including its permission, warranty disclaimer and liability provisions.
+Prepared 2026-10-11 for version 0.1.3. The packaged skills and helper are provided by Khadin Akbar under the accompanying MIT License, including its permission, warranty disclaimer and liability provisions.
 
 You control the inputs, selected targets, local files, account access and authorized operations. Use only sources and data you are permitted to access and process, and respect applicable website/provider terms, intellectual-property rights and privacy obligations. The workflow does not authorize bypassing access controls, private-account investigation or automatically contacting people found in public data.
 

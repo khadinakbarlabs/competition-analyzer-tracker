@@ -1,4 +1,4 @@
-# Owner review — Competition Analyzer & Tracker 0.1.2
+# Owner review — Competition Analyzer & Tracker 0.1.3
 
 Status: Khadin approved this completed package, listing and named publication destination on 2026-10-11 with “approve build and publish.” GitHub publication and Anthropic submission preparation are authorized. This record does not establish directory acceptance or availability.
 
@@ -20,7 +20,7 @@ The title and private-preview subtitle are each 30 characters. The description i
 
 Seven skills; no MCP server, agents, commands, hooks, background process, tool auto-approval, lifecycle installer or bundled credentials. Live collection uses the user's independently installed official Apify CLI and account. The contained Node.js helper only validates local evidence, compares snapshots and writes new HTML/Markdown reports. Selected live research inputs go to Apify and selected upstream providers; the helper makes no network requests or telemetry calls.
 
-The approved public source destination is [khadinakbarlabs/competition-analyzer-tracker](https://github.com/khadinakbarlabs/competition-analyzer-tracker) on GitHub, with MIT licensing. The repository and public README, support, privacy and terms pages returned HTTP 200 and their raw contents matched the approved source. Version 0.1.2 adds those verified links and public installation instructions; skills and helper behavior are unchanged from 0.1.1.
+The approved public source destination is [khadinakbarlabs/competition-analyzer-tracker](https://github.com/khadinakbarlabs/competition-analyzer-tracker) on GitHub, with MIT licensing. The repository and public README, support, privacy and terms pages returned HTTP 200 and their raw contents matched the approved source. Version 0.1.2 adds those verified links and public installation instructions. Version 0.1.3 removes an unnecessary networking-module import while preserving the local helper's source-URL protections; 29 behavioral tests pass.
 
 ## Review materials
 

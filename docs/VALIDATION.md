@@ -1,10 +1,10 @@
-# Validation — source release 0.1.2
+# Validation — source release 0.1.3
 
 Checked 2026-10-11. This records evidence, not an Anthropic approval claim.
 
 | Check | Actual state |
 | --- | --- |
-| Offline helper behavior | 27 tests passed, including source failures, non-comparable panels, safe writes, HTML escaping, bounded arithmetic, custom thresholds and percent-encoded citations |
+| Offline helper behavior | 29 tests passed, including source failures, non-comparable panels, safe writes, HTML escaping, bounded arithmetic, custom thresholds, percent-encoded citations and normalized IP-address exclusions |
 | Claude native manifests | Plugin and marketplace both pass `claude plugin validate --strict` in Claude Code 2.1.289 |
 | Portable manifest | Passes the Agent Plugins 1.0 JSON Schema; title/subtitle each 30 characters |
 | Actor contracts | Ten public identities, schemas, readmes and build identities retrieved; ten credential-free recipe/subset-schema pairs validate |
@@ -12,11 +12,11 @@ Checked 2026-10-11. This records evidence, not an Anthropic approval claim.
 | Package containment | No runtime MCP, agents, commands, hooks, installer, mixed native manifests, symlinks or unsafe archive paths |
 | Source review | Credential/path pattern scan plus focused review; no exposed credential or publisher authentication material found |
 | Plugin Builder | Component budget passes; native bundle generation and Codex compatibility checker used; production graph and evidence ledger recorded |
-| Private Plugin Creator release | Private personal preview exists at 0.1.1; synchronization to the public source metadata is pending |
+| Private Plugin Creator release | Private personal preview updated to 0.1.2; synchronization to the URL-validation refinement is pending |
 | Claude task evaluations | Eight read-only cases authored. Attempt stopped at authentication before any task completed; no passing host-eval claim |
 | Paid Actor acceptance | Not run; no paid data collection authorized or performed |
-| Public GitHub publication | Approved and created at `khadinakbarlabs/competition-analyzer-tracker`; public repository and documentation/policy pages verified, final metadata commit pending |
-| Anthropic portal | Source step inspected; no repository validation, draft submission, compliance attestation or final submission performed |
+| Public GitHub publication | Approved and created at `khadinakbarlabs/competition-analyzer-tracker`; public repository and documentation/policy pages verified |
+| Anthropic portal | Source validation passed for 0.1.2 with five informational listing-field warnings and one policy hold. The hold joined JSON-file reading with the unused `node:net` import; 0.1.3 removes that import and awaits an exact-commit rescan. No final submission or compliance attestation performed |
 | Public directory availability | Not established |
 
 ## Reproduce local checks

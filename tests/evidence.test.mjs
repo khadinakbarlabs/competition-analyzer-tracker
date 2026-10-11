@@ -82,6 +82,18 @@ test('unsafe URLs and credential-bearing sources are rejected', () => {
     assert.throws(() => validateSnapshot(snapshot({ observations: [observation({ source: { url } })] })), /url|source|credential|public/i);
   }
 });
+test('URL-normalized IPv4 and IPv6 literals remain excluded from evidence links', () => {
+  const urls = ['https://127.1/', 'https://0x7f000001/', 'https://2130706433/', 'https://0177.0.0.1/', 'https://127.0.0.1./', 'https://8.8.8.8/', 'https://[::ffff:127.0.0.1]/', 'https://[2001:db8::1]/'];
+  for (const url of urls) {
+    assert.throws(() => validateSnapshot(snapshot({ observations: [observation({ source: { url, locator: 'fixture' } })] })), /public HTTPS/i);
+  }
+});
+test('public domain labels containing digits remain valid evidence links', () => {
+  for (const url of ['https://1.2.3.rival.example/pricing', 'https://rival.example./pricing']) {
+    const input = snapshot({ observations: [observation({ source: { url, locator: 'fixture' } })] });
+    assert.deepEqual(validateSnapshot(input), input);
+  }
+});
 test('unknown or credential-like fields cannot enter portable reports', () => {
   assert.throws(() => validateSnapshot({ ...snapshot(), apiKey: 'secret' }), /field/i);
   assert.throws(() => validateSnapshot(snapshot({ observations: [observation({ context: { password: 'secret' } })] })), /field|credential/i);

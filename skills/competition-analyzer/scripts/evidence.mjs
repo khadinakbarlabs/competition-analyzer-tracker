@@ -1,5 +1,4 @@
 import { open } from 'node:fs/promises';
-import { isIP } from 'node:net';
 import { pathToFileURL } from 'node:url';
 
 const DIMENSIONS = new Set(['pricing', 'positioning', 'feature', 'review', 'seo', 'traffic', 'backlink', 'product']);
@@ -30,7 +29,9 @@ function publicUrl(value) {
   let url;
   try { url = new URL(value); } catch { throw new Error('Source URL must be a public HTTPS URL'); }
   const host = url.hostname.toLowerCase().replace(/\.$/, '');
-  if (url.protocol !== 'https:' || url.username || url.password || isIP(host) || host.startsWith('[') || !host.includes('.') || /(?:^|\.)(?:localhost|local|internal|lan|test|invalid)$/.test(host)) throw new Error('Source URL must be a public HTTPS URL without credentials');
+  // URL normalizes IPv4 aliases to dotted decimal and brackets IPv6 literals.
+  const ipLiteral = /^(?:\d{1,3}\.){3}\d{1,3}$/.test(host) || host.startsWith('[');
+  if (url.protocol !== 'https:' || url.username || url.password || ipLiteral || !host.includes('.') || /(?:^|\.)(?:localhost|local|internal|lan|test|invalid)$/.test(host)) throw new Error('Source URL must be a public HTTPS URL without credentials');
   if ([...url.searchParams.keys()].some(key => /token|secret|password|api.?key|authorization|signature|credential/i.test(key)) || /token|secret|password|api.?key|authorization|signature|credential/i.test(url.hash)) throw new Error('Source URL contains a credential parameter');
   return url;
 }

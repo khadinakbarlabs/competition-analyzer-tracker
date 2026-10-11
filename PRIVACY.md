@@ -1,6 +1,6 @@
 # Privacy — Competition Analyzer & Tracker
 
-Prepared 2026-10-11 for version 0.1.2. Publisher: Khadin Akbar. This document describes the packaged workflow and supporting helper.
+Prepared 2026-10-11 for version 0.1.3. Publisher: Khadin Akbar. This document describes the packaged workflow and supporting helper.
 
 The skills and offline Node.js helper add no publisher-operated data collection endpoint, telemetry, analytics, credential store or hosted database. The helper reads the local JSON files you select and writes the new report/comparison file you select. The assistant can save project context, exports and receipts to your chosen filesystem location when that work is authorized.
 
