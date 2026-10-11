@@ -16,6 +16,8 @@ apify actors info khadinakbar/ACTOR-SLUG --input
 
 Replace uppercase notation with the catalog's actual slug. Inspect public identity and current build metadata without dumping unrelated account/configuration data. Use a verified build number. If the build or input schema changed, reconcile the contract before launching; do not send stale fields or assume defaults.
 
+Identify the current Actor's actual upstream providers and their public privacy-policy links in the operation plan, along with the selected inputs each receives. The plugin's `PRIVACY.md` links Apify, the Claude host and a named SEO provider; provider selection varies by Actor and build. If the actual data flow cannot be established, analyze existing exports until it can. Do not infer privacy or retention terms from an Actor's name.
+
 Create an operation receipt outside the plugin using `templates/operation.json`: intended Actor/build, exact input file, purpose, allowed targets, approved spending ceiling, timeout, owner authorization context and expected outputs. Keep one receipt per run. Set `planned` first; change to `starting` before the request. A count cap does not constitute a spending cap. Inspect current event/start charges and native cap semantics; do not describe an input named `free_tier` as free.
 
 Offer a small plan with only the Actors needed. Require an applicable positive spending envelope and clear target/scope authorization before a paid start. Existing authorization can cover that exact plan; do not ask again when it already does. Do not infer recurring permission, additional providers, alert destinations or broader crawl scope from a one-time job.

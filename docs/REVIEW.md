@@ -1,4 +1,4 @@
-# Owner review — Competition Analyzer & Tracker 0.1.3
+# Owner review — Competition Analyzer & Tracker 0.1.4
 
 Status: Khadin approved this completed package, listing and named publication destination on 2026-10-11 with “approve build and publish.” GitHub publication and Anthropic submission preparation are authorized. This record does not establish directory acceptance or availability.
 
@@ -22,6 +22,8 @@ Seven skills; no MCP server, agents, commands, hooks, background process, tool a
 
 The approved public source destination is [khadinakbarlabs/competition-analyzer-tracker](https://github.com/khadinakbarlabs/competition-analyzer-tracker) on GitHub, with MIT licensing. The repository and public README, support, privacy and terms pages returned HTTP 200 and their raw contents matched the approved source. Version 0.1.2 adds those verified links and public installation instructions. Version 0.1.3 removes an unnecessary networking-module import while preserving the local helper's source-URL protections; 29 behavioral tests pass.
 
+Version 0.1.4 links the actual external privacy documents and includes upstream provider identification in live operation plans. The Anthropic account now has a saved draft for this repository, targeting Claude Code only. Saving it did not submit a version for review.
+
 ## Review materials
 
 - `skills/competition-analyzer/references/demo-report.html`: clearly labelled synthetic comparison report.
@@ -39,3 +41,17 @@ The approved public source destination is [khadinakbarlabs/competition-analyzer-
 5. Present any required legal attestations for the authorized human to complete. Submit only under the owner's approval; record the actual resulting submission/review status.
 
 Approval of a local package does not itself establish scan success, reviewer acceptance or public directory availability.
+
+## Current submission blocker
+
+The Compliance step requires the publisher to agree to the Software Directory Terms and Directory Policy, confirm policy accuracy and allow contact, and attest that the plugin “does not exfiltrate credentials or execute code outside its declared MCP servers.” All four boxes remain unchecked. The package uses the independently installed official Apify CLI and a contained Node.js helper without declaring an MCP server, so the execution clause cannot be asserted literally. Obtain Anthropic clarification or written permission for this disclosed design before completing that attestation. Human legal acceptance remains separate from the owner's approval to build and publish source.
+
+The repository validator also holds the package for `MCP_FORWARDS_CREDENTIAL_ENV`. At commit `52def0a`, its explanation joins local JSON-file reading with a variable named `host` in the same offline helper. That variable is the parsed source URL hostname, used only to reject unsafe links. The helper imports filesystem and URL utilities, does not inspect environment/credential stores, and performs no network calls. Preserve the full finding for a reviewer; do not claim the hold has cleared.
+
+The four directory URL fields and icon also produce five informational warnings. The portal says these are directory-only fields and require no action; Claude Code 2.1.289 accepts the native manifest under its strict validator.
+
+## Proposed clarification for the publisher
+
+This plugin is a skills-only Claude Code workflow. It invokes the user's separately installed official Apify CLI for explicitly requested, bounded public research using that user's account. It contains a Node.js helper that validates user-selected local JSON and writes new local reports, with no network calls or credential-store access. It declares no MCP server. Please clarify whether this disclosed CLI/helper workflow is permitted and how the publisher can accurately complete the required attestation concerning execution outside declared MCP servers. The source validator's credential-forwarding hold refers to local file reading and a URL-validation hostname variable; neither sends credentials off the machine.
+
+This clarification is prepared for review; it has not been sent as outreach or represented as permission.

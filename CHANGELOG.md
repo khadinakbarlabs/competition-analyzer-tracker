@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.4 — 2026-10-11
+
+Link the verified external privacy documents and require the actual provider data flow to be identified in live operation plans. Record the saved Anthropic draft, the scanner's remaining policy hold and the unresolved external-CLI attestation. GitHub source distribution and private preview remain separate from directory submission, security review and public availability.
+
 ## 0.1.3 — 2026-10-11
 
 Remove the helper's unnecessary `node:net` import. The built-in URL parser already normalizes IPv4 aliases and brackets IPv6 literals; explicit checks preserve the existing exclusion of IP-based source links. Add characterization tests for hexadecimal, decimal, octal, shorthand and mapped address forms, plus valid domain labels containing digits. All 29 local tests pass. No network or credential-reading capability is added.

@@ -1,4 +1,4 @@
-# Validation — source release 0.1.3
+# Validation — source release 0.1.4
 
 Checked 2026-10-11. This records evidence, not an Anthropic approval claim.
 
@@ -12,11 +12,11 @@ Checked 2026-10-11. This records evidence, not an Anthropic approval claim.
 | Package containment | No runtime MCP, agents, commands, hooks, installer, mixed native manifests, symlinks or unsafe archive paths |
 | Source review | Credential/path pattern scan plus focused review; no exposed credential or publisher authentication material found |
 | Plugin Builder | Component budget passes; native bundle generation and Codex compatibility checker used; production graph and evidence ledger recorded |
-| Private Plugin Creator release | Private personal preview updated to 0.1.2; synchronization to the URL-validation refinement is pending |
+| Private Plugin Creator release | Private personal preview at 0.1.3 read back against source; synchronization to the disclosure update is pending |
 | Claude task evaluations | Eight read-only cases authored. Attempt stopped at authentication before any task completed; no passing host-eval claim |
 | Paid Actor acceptance | Not run; no paid data collection authorized or performed |
 | Public GitHub publication | Approved and created at `khadinakbarlabs/competition-analyzer-tracker`; public repository and documentation/policy pages verified |
-| Anthropic portal | Source validation passed for 0.1.2 with five informational listing-field warnings and one policy hold. The hold joined JSON-file reading with the unused `node:net` import; 0.1.3 removes that import and awaits an exact-commit rescan. No final submission or compliance attestation performed |
+| Anthropic portal | Account draft saved for Claude Code only. Repository validation passed at `52def0a` with five informational listing-field warnings and one policy hold joining JSON-file reading with the helper's URL-validation hostname variable. Final security scan, submission, legal attestations, reviewer acceptance and availability are not established |
 | Public directory availability | Not established |
 
 ## Reproduce local checks
@@ -43,4 +43,4 @@ Model-call cost ceilings are checked before launch and can overrun by the one in
 
 ## Remaining release work
 
-Owner approval covers the exact listing, package/policies and proposed public destination. After that approval, verify public policy/support/documentation URLs, validate the exact public source and run the authenticated host checks. Directory scans, reviewer decisions and live availability must be read back separately. Legal attestations are completed by the authorized human if required. A paid Actor benchmark needs an applicable target and spending envelope; it cannot be reported as passed from contract checks or synthetic fixtures.
+Owner approval covers the exact listing, package/policies and public destination. The public repository and policy/support/documentation URLs have been verified. Run the authenticated host checks after Claude Code signs in. Directory scans, reviewer decisions and live availability must be read back separately. The saved draft's execution attestation conflicts with the declared CLI/helper design; obtain clarification or written permission before the authorized human completes legal attestations and final submission. A paid Actor benchmark needs an applicable target and spending envelope; it cannot be reported as passed from contract checks or synthetic fixtures. See `docs/REVIEW.md` for the exact finding and prepared clarification.
