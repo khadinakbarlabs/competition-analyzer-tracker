@@ -12,7 +12,8 @@ Checked 2026-10-11. This records evidence, not an Anthropic approval claim.
 | Package containment | No runtime MCP, agents, commands, hooks, installer, mixed native manifests, symlinks or unsafe archive paths |
 | Source review | Credential/path pattern scan plus focused review; no exposed credential or publisher authentication material found |
 | Plugin Builder | Component budget passes; native bundle generation and Codex compatibility checker used; production graph and evidence ledger recorded |
-| Private Plugin Creator release | Private personal preview at 0.1.3 read back against source; synchronization to the disclosure update is pending |
+| Private Plugin Creator release | Private personal preview at 0.1.4; root manifest, helper and affected documents read back against source, with private audience preserved |
+| Native GitHub installation | Publisher marketplace added and 0.1.4 installed and enabled in an isolated Claude configuration; normal user settings were not changed |
 | Claude task evaluations | Eight read-only cases authored. Attempt stopped at authentication before any task completed; no passing host-eval claim |
 | Paid Actor acceptance | Not run; no paid data collection authorized or performed |
 | Public GitHub publication | Approved and created at `khadinakbarlabs/competition-analyzer-tracker`; public repository and documentation/policy pages verified |
@@ -36,7 +37,7 @@ The private import preserved the helper, listing title and subtitle; it generate
 The native eval attempt recognized the plugin as 0.1.0 but reported `auth_failed`: the Claude Code OAuth session had expired and could not be refreshed. Cost was reported as zero; this is an authentication result, not a plugin behavior score. The subsequent 0.1.1 citation fix passed its local regression test. Reauthenticate through Claude Code's normal flow, then run the existing suite against the current candidate. Keep reports local and disable real servers/scaffolds:
 
 ```bash
-claude plugin eval . --runs 1 --ablation with-without --model haiku --max-cost-usd 2 --no-publish --no-scaffold --mocks record --trust-plugin --output-dir evals/results/review-0.1.1
+claude plugin eval . --runs 1 --ablation with-without --model haiku --max-cost-usd 2 --no-publish --no-scaffold --mocks record --trust-plugin --output-dir evals/results/review-0.1.4
 ```
 
 Model-call cost ceilings are checked before launch and can overrun by the one in-flight run. A single passing trial would still be a bounded smoke check rather than evidence of production accuracy or guaranteed skill improvement. Inspect actual task replies, tool selection, sources and the no-plugin comparison before claiming a gain.
