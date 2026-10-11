@@ -18,13 +18,22 @@ Seven focused skills use your Apify account and Khadin Akbar's Actors through th
 
 ## Use it
 
-Load this directory with the supported local Claude Code plugin option:
+Install from this publisher's GitHub marketplace:
+
+```bash
+claude plugin marketplace add khadinakbarlabs/competition-analyzer-tracker
+claude plugin install competition-analyzer-tracker@competition-intelligence-tools
+```
+
+See Claude's [official installation guide](https://code.claude.com/docs/en/plugins/install). This source distribution is available independently of Anthropic directory review. The directory listing will have its own installation action after approval.
+
+To inspect a local copy for one session, use:
 
 ```bash
 claude --plugin-dir ./competition-analyzer-tracker
 ```
 
-When already inside this directory, use `claude --plugin-dir .`. After directory approval, the public listing will supply its own install action. A source file or local validation does not establish directory approval.
+When already inside this directory, use `claude --plugin-dir .`.
 
 Try natural requests:
 

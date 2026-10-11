@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2 — 2026-10-11
+
+Public source distribution approved by Khadin. Add verified GitHub documentation, support, privacy and terms links to the directory metadata and publish installation instructions. The skills and helper are unchanged from the locally tested 0.1.1 candidate. Authenticated Claude task tests, paid Actor acceptance and Anthropic review remain separately recorded in `docs/VALIDATION.md`.
+
 ## 0.1.1 — 2026-10-11
 
 Preserve percent-encoded source links in Markdown reports. Add the verified public publisher contact to synchronized metadata. Private review candidate; publication and submission remain pending approval.

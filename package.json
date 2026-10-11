@@ -1,6 +1,6 @@
 {
   "name": "competition-analyzer-tracker",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Evidence-led competitor analysis, pricing research, sales battlecards and saved watchlist comparisons for Claude Code.",
   "private": true,
   "type": "module",

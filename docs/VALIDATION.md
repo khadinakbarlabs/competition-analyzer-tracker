@@ -1,4 +1,4 @@
-# Validation — candidate 0.1.1
+# Validation — source release 0.1.2
 
 Checked 2026-10-11. This records evidence, not an Anthropic approval claim.
 
@@ -12,10 +12,10 @@ Checked 2026-10-11. This records evidence, not an Anthropic approval claim.
 | Package containment | No runtime MCP, agents, commands, hooks, installer, mixed native manifests, symlinks or unsafe archive paths |
 | Source review | Credential/path pattern scan plus focused review; no exposed credential or publisher authentication material found |
 | Plugin Builder | Component budget passes; native bundle generation and Codex compatibility checker used; production graph and evidence ledger recorded |
-| Private Plugin Creator release | Created and updated as a private personal plugin; current candidate is 0.1.1 |
+| Private Plugin Creator release | Private personal preview exists at 0.1.1; synchronization to the public source metadata is pending |
 | Claude task evaluations | Eight read-only cases authored. Attempt stopped at authentication before any task completed; no passing host-eval claim |
 | Paid Actor acceptance | Not run; no paid data collection authorized or performed |
-| Public GitHub publication | Not performed; proposed repository destination awaits owner approval |
+| Public GitHub publication | Approved and created at `khadinakbarlabs/competition-analyzer-tracker`; public repository and documentation/policy pages verified, final metadata commit pending |
 | Anthropic portal | Source step inspected; no repository validation, draft submission, compliance attestation or final submission performed |
 | Public directory availability | Not established |
 

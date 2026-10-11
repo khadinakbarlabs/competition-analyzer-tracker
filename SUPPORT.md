@@ -2,7 +2,7 @@
 
 Publisher: Khadin Akbar.
 
-For plugin issues, contact [hello@khadinakbar.com](mailto:hello@khadinakbar.com), the publisher's public contact listed on [khadinakbar.com](https://www.khadinakbar.com). A public repository issue tracker will be linked after publication. The plugin's public documentation and policy URLs will be verified before directory submission.
+For plugin issues, use the [public issue tracker](https://github.com/khadinakbarlabs/competition-analyzer-tracker/issues) or contact [hello@khadinakbar.com](mailto:hello@khadinakbar.com), the publisher's public contact listed on [khadinakbar.com](https://www.khadinakbar.com). Use email for a redacted security report. [Documentation](https://github.com/khadinakbarlabs/competition-analyzer-tracker#readme), [privacy](https://github.com/khadinakbarlabs/competition-analyzer-tracker/blob/main/PRIVACY.md) and [terms](https://github.com/khadinakbarlabs/competition-analyzer-tracker/blob/main/TERMS.md) are public.
 
 Include the plugin version, host/runtime version, selected skill, expected result, actual result and a minimal redacted reproduction. Synthetic fixtures are preferable. Do not include API keys, auth files, cookies, private run links, customer data, review author identities or unredacted logs.
 
