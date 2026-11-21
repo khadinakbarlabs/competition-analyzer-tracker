@@ -14,7 +14,7 @@ Status: Khadin approved this completed package, listing and named publication de
 
 **Search keywords:** competitor analysis, competitive intelligence, competitor tracking, pricing analysis, market research, sales battlecards, review analysis, competitor SEO, Apify, Claude Code.
 
-The title and private-preview subtitle are each 30 characters. The description is 396 characters; the longer private-preview description is in `plugin.json`. Natural search terms describe the actual workflows without fabricated rankings, certifications, outcomes or always-on monitoring claims.
+The title and private-preview subtitle are each 30 characters. The description is 396 characters; the longer private-preview description is in `.codex-plugin/plugin.json`. Natural search terms describe the actual workflows without fabricated rankings, certifications, outcomes or always-on monitoring claims.
 
 ## Package and data handling
 

@@ -6,13 +6,12 @@ Checked 2026-10-11. This records evidence, not an Anthropic approval claim.
 | --- | --- |
 | Offline helper behavior | 29 tests passed, including source failures, non-comparable panels, safe writes, HTML escaping, bounded arithmetic, custom thresholds, percent-encoded citations and normalized IP-address exclusions |
 | Claude native manifests | Plugin and marketplace both pass `claude plugin validate --strict` in Claude Code 2.1.289 |
-| Portable manifest | Passes the Agent Plugins 1.0 JSON Schema; title/subtitle each 30 characters |
 | Actor contracts | Ten public identities, schemas, readmes and build identities retrieved; ten credential-free recipe/subset-schema pairs validate |
 | Exact native archives | Both isolated bundles were unpacked and validated, with seven skills, supporting helper, references and input recipes present |
 | Package containment | No runtime MCP, agents, commands, hooks, installer, mixed native manifests, symlinks or unsafe archive paths |
 | Source review | Credential/path pattern scan plus focused review; no exposed credential or publisher authentication material found |
 | Plugin Builder | Component budget passes; native bundle generation and Codex compatibility checker used; production graph and evidence ledger recorded |
-| Private Plugin Creator release | Private personal preview at 0.1.4; root manifest, helper and affected documents read back against source, with private audience preserved |
+| Private Plugin Creator release | Private personal preview at 0.1.4; manifests, helper and affected documents read back against source, with private audience preserved |
 | Native GitHub installation | Publisher marketplace added and 0.1.4 installed and enabled in an isolated Claude configuration; normal user settings were not changed |
 | Claude task evaluations | Eight read-only cases authored. Attempt stopped at authentication before any task completed; no passing host-eval claim |
 | Paid Actor acceptance | Not run; no paid data collection authorized or performed |
@@ -28,7 +27,7 @@ claude plugin validate --strict .claude-plugin/plugin.json
 claude plugin validate --strict .claude-plugin/marketplace.json
 ```
 
-The source tests are development resources; runtime archives contain only native manifests, skills/supporting resources, assets and user-facing root documents. Plugin Builder's older compatibility checker reads `.codex-plugin/plugin.json`; the portable root manifest is checked separately against its current schema. Its self-specific multi-platform release checker is not used as evidence for this plugin.
+The source tests are development resources; runtime archives contain only native manifests, skills/supporting resources, assets and user-facing root documents. Plugin Builder's older compatibility checker reads `.codex-plugin/plugin.json`. The former portable root manifest was removed in 0.1.6. Its self-specific multi-platform release checker is not used as evidence for this plugin.
 
 The private import preserved the helper, listing title and subtitle; it generated a Codex compatibility overlay and normalized publisher metadata. Changes use the current release guard and retain private visibility.
 

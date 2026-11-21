@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.6 — 2026-11-22
+
+Manifest cleanup for the Claude directory — removed listing-only and cross-tool keys from `.claude-plugin/plugin.json` and the unused agent-plugins root manifest; no behavior change.
+
 ## 0.1.5 — 2026-11-21
 
 Resubmission build for the directory re-check. Downscale the icon from 1254×1254 (1.3 MB) to 512×512 (259 KB) with identical artwork, cutting the package from about 1.5 MB to about 0.4 MB to reduce the payload the directory source scan must read. No skill, helper, data-flow or permission change. The helper still reads no environment variables or credential stores and makes no network requests; the `MCP_FORWARDS_CREDENTIAL_ENV` hold remains for reviewer confirmation because the plugin declares no MCP server and forwards no credential.
