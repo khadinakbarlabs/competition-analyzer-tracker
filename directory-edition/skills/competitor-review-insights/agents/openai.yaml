@@ -1,0 +1,5 @@
+interface:
+  display_name: Competitor Review Insights
+  short_description: Find themes in sampled customer reviews
+  default_prompt: Use $competitor-review-insights to help me with this competitor
+    research task, using supplied evidence first.

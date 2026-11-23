@@ -1,0 +1,31 @@
+# Changelog
+
+Directory edition note: this folder is the text-only build of the plugin for the Claude directory. Entries below describe the full edition; mentions of the local helper, tests and Node.js apply to the full edition only, which is installable from the GitHub repository.
+
+## 0.1.6 — 2026-11-22
+
+Manifest cleanup for the Claude directory — removed listing-only and cross-tool keys from `.claude-plugin/plugin.json` and the unused agent-plugins root manifest; no behavior change.
+
+## 0.1.5 — 2026-11-21
+
+Resubmission build for the directory re-check. Downscale the icon from 1254×1254 (1.3 MB) to 512×512 (259 KB) with identical artwork, cutting the package from about 1.5 MB to about 0.4 MB to reduce the payload the directory source scan must read. No skill, helper, data-flow or permission change. The helper still reads no environment variables or credential stores and makes no network requests; the `MCP_FORWARDS_CREDENTIAL_ENV` hold remains for reviewer confirmation because the plugin declares no MCP server and forwards no credential.
+
+## 0.1.4 — 2026-10-11
+
+Link the verified external privacy documents and require the actual provider data flow to be identified in live operation plans. Record the saved Anthropic draft, the scanner's remaining policy hold and the unresolved external-CLI attestation. GitHub source distribution and private preview remain separate from directory submission, security review and public availability.
+
+## 0.1.3 — 2026-10-11
+
+Remove the helper's unnecessary `node:net` import. The built-in URL parser already normalizes IPv4 aliases and brackets IPv6 literals; explicit checks preserve the existing exclusion of IP-based source links. Add characterization tests for hexadecimal, decimal, octal, shorthand and mapped address forms, plus valid domain labels containing digits. All 29 local tests pass. No network or credential-reading capability is added.
+
+## 0.1.2 — 2026-10-11
+
+Public source distribution approved by Khadin. Add verified GitHub documentation, support, privacy and terms links to the directory metadata and publish installation instructions. The skills and helper are unchanged from the locally tested 0.1.1 candidate. Authenticated Claude task tests, paid Actor acceptance and Anthropic review remain separately recorded in `docs/VALIDATION.md`.
+
+## 0.1.1 — 2026-10-11
+
+Preserve percent-encoded source links in Markdown reports. Add the verified public publisher contact to synchronized metadata. Private review candidate; publication and submission remain pending approval.
+
+## 0.1.0 — 2026-10-11
+
+Initial skills-only Claude Code release candidate. Seven workflows cover competitor discovery, pricing, customer reviews, SEO evidence, battlecards, analysis and saved tracking. Public input contracts for ten Khadin Akbar Actors support bounded official CLI collection. A dependency-free local helper validates evidence, compares like-for-like snapshots and creates accessible HTML/Markdown reports. Public release, paid cloud acceptance and Anthropic review are separate pending states until recorded.

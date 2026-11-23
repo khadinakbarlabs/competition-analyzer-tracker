@@ -1,0 +1,13 @@
+{
+  "companyIdentifiers": [
+    "example.com"
+  ],
+  "maxReviewsPerCompany": 10,
+  "filterStars": [],
+  "filterLanguage": "en",
+  "filterDateRange": "last3months",
+  "sortBy": "recency",
+  "onlyVerified": false,
+  "onlyWithReplies": false,
+  "includeCompanyInfo": true
+}

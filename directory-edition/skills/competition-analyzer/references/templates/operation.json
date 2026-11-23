@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "operationId": "DEMO-REPLACE-WITH-UNIQUE-ID",
+  "state": "planned",
+  "actor": "khadinakbar/firecrawl-alternative",
+  "targets": [
+    "https://example.com/pricing"
+  ],
+  "build": "1.0.13",
+  "inputFile": "REPLACE-WITH-VERIFIED-PROJECT-INPUT-PATH",
+  "authorization": {
+    "status": "required",
+    "scope": "illustrative only; no real run authorized",
+    "maxTotalChargeUsd": 1,
+    "expiry": null
+  },
+  "startedAt": null,
+  "runId": null,
+  "datasetId": null,
+  "keyValueStoreId": null,
+  "actualCostUsd": null,
+  "nextAction": "Confirm real targets, current contract, native charge cap and applicable spending authorization before start."
+}

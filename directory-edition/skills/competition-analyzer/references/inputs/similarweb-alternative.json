@@ -1,0 +1,15 @@
+{
+  "domains": [
+    "example.com"
+  ],
+  "mode": "free_tier",
+  "countryName": "United States",
+  "languageCode": "en",
+  "includeCompetitors": true,
+  "includeKeywords": true,
+  "includeTechnologies": false,
+  "includeSimilarweb": true,
+  "keywordLimit": 5,
+  "competitorLimit": 3,
+  "onPartialFailure": "return_partial"
+}

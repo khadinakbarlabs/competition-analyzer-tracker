@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "projectId": "synthetic-competition-demo",
+  "competitors": [
+    {
+      "id": "northstar",
+      "url": "https://northstar.example",
+      "relationship": "direct"
+    },
+    {
+      "id": "harbor",
+      "url": "https://harbor.example",
+      "relationship": "indirect"
+    }
+  ],
+  "dimensions": [
+    "pricing",
+    "positioning",
+    "feature",
+    "review",
+    "traffic"
+  ],
+  "refresh": {
+    "mode": "manual",
+    "timezone": "Asia/Riyadh"
+  },
+  "thresholds": {
+    "percent": 5,
+    "absolute": 0
+  },
+  "budget": {
+    "perRunUsd": 1,
+    "monthlyUsd": 10
+  }
+}

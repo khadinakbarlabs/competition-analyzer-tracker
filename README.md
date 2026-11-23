@@ -4,6 +4,10 @@ Competitive intelligence for Claude Code: discover rivals, compare pricing and f
 
 Seven focused skills use your Apify account and Khadin Akbar's Actors through the independently installed official Apify CLI. Existing exports work offline. The package contains skills, reference contracts, synthetic examples and a local report helper. It starts no MCP server, background process or installer and includes no publisher credentials.
 
+## Two editions
+
+This repository root is the full edition, with the local evidence helper and its tests. [`directory-edition/`](directory-edition/) is a text-only build of the same seven skills for the Claude directory: it ships no executable code, and the assistant applies the validation, comparison and report rules from written checklists instead of the helper. Its README lists what is less exact.
+
 ## What you get
 
 | Workflow | Result |

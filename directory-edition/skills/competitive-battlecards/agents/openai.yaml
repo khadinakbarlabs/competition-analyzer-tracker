@@ -1,0 +1,5 @@
+interface:
+  display_name: Sales Battlecards
+  short_description: Create balanced, source-linked sales battlecards
+  default_prompt: Use $competitive-battlecards to help me with this competitor research
+    task, using supplied evidence first.

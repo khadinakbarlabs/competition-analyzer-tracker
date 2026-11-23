@@ -1,0 +1,5 @@
+interface:
+  display_name: Competitor Pricing
+  short_description: Compare plans and matched product offers
+  default_prompt: Use $competitor-pricing to help me with this competitor research
+    task, using supplied evidence first.

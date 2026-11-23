@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "publisher": "Khadin Akbar",
+  "retrievedAt": "2026-10-11",
+  "execution": "independently installed official Apify CLI; user account; billable runs",
+  "recipeStatus": "Illustrative examples only. Replace demo targets with confirmed canonical targets; recheck current schemas and authorize a bounded plan before running. No examples are authorized live operations.",
+  "contractStatus": "Public schemas/readmes/metadata verified. Field availability varies; inspect actual Dataset, OUTPUT and RUN_SUMMARY. No paid cloud acceptance claim.",
+  "actors": [
+    {
+      "actor": "khadinakbar/scrape-google-serp",
+      "actorId": "z0r97dqhtUQk2AXd8",
+      "public": true,
+      "verifiedAt": "2026-10-11",
+      "contractSource": "https://apify.com/khadinakbar/scrape-google-serp",
+      "verifiedBuild": {
+        "number": "1.0.21",
+        "id": "ZnPFdByDFDsblxVt8"
+      },
+      "use": "discovery, sampled organic results",
+      "exampleInput": "inputs/scrape-google-serp.json",
+      "inputSubsetSchema": "schemas/scrape-google-serp.schema.json",
+      "outputFieldsToInspect": [
+        "query",
+        "url",
+        "title",
+        "position"
+      ],
+      "limit": "A sampled search is not proof of direct competition or an exhaustive rank panel.",
+      "liveAcceptance": "not_run"
+    },
+    {
+      "actor": "khadinakbar/firecrawl-alternative",
+      "actorId": "ALKZ2E8O8oytU3RGs",
+      "public": true,
+      "verifiedAt": "2026-10-11",
+      "contractSource": "https://apify.com/khadinakbar/firecrawl-alternative",
+      "verifiedBuild": {
+        "number": "1.0.13",
+        "id": "k0aKxWEj8DVEqUrJf"
+      },
+      "use": "public pricing, features, positioning",
+      "exampleInput": "inputs/firecrawl-alternative.json",
+      "inputSubsetSchema": "schemas/firecrawl-alternative.schema.json",
+      "outputFieldsToInspect": [
+        "sourceUrl",
+        "finalUrl",
+        "title",
+        "markdown",
+        "collectedAt",
+        "limitations"
+      ],
+      "limit": "Public HTML only; no JavaScript rendering, protected login or guaranteed pricing extraction. Inspect OUTPUT and RUN_SUMMARY.",
+      "liveAcceptance": "not_run"
+    },
+    {
+      "actor": "khadinakbar/website-seo-spider",
+      "actorId": "f0PPU2rWRKUBwAfeZ",
+      "public": true,
+      "verifiedAt": "2026-10-11",
+      "contractSource": "https://apify.com/khadinakbar/website-seo-spider",
+      "verifiedBuild": {
+        "number": "0.2.5",
+        "id": "VgcoYYZsbn0qxADMx"
+      },
+      "use": "page metadata and technical SEO",
+      "exampleInput": "inputs/website-seo-spider.json",
+      "inputSubsetSchema": "schemas/website-seo-spider.schema.json",
+      "outputFieldsToInspect": [
+        "url",
+        "requestedUrl",
+        "statusCode",
+        "title",
+        "h1",
+        "metaDescription",
+        "issueFlags",
+        "scrapedAt"
+      ],
+      "limit": "Page metadata is not full pricing-page text. Direct fetch can fail or omit JavaScript content.",
+      "liveAcceptance": "not_run"
+    },
+    {
+      "actor": "khadinakbar/similarweb-alternative",
+      "actorId": "me5BfzNdGDwrH5Jbd",
+      "public": true,
+      "verifiedAt": "2026-10-11",
+      "contractSource": "https://apify.com/khadinakbar/similarweb-alternative",
+      "verifiedBuild": {
+        "number": "0.2.5",
+        "id": "alyXnXbAEMujMH5hs"
+      },
+      "use": "organic estimates and discovery signals",
+      "exampleInput": "inputs/similarweb-alternative.json",
+      "inputSubsetSchema": "schemas/similarweb-alternative.schema.json",
+      "outputFieldsToInspect": [
+        "domain",
+        "organicEtv",
+        "visits",
+        "similarwebAvailable"
+      ],
+      "limit": "organicEtv is estimated Google organic traffic, not total visits. Similarweb visits may be null. free_tier is still billable.",
+      "liveAcceptance": "not_run"
+    },
+    {
+      "actor": "khadinakbar/keyword-rank-tracker",
+      "actorId": "ufcrXss0mJzYLRgWW",
+      "public": true,
+      "verifiedAt": "2026-10-11",
+      "contractSource": "https://apify.com/khadinakbar/keyword-rank-tracker",
+      "verifiedBuild": {
+        "number": "1.1.5",
+        "id": "RLJfTHCelUBeDR4Sp"
+      },
+      "use": "matched keyword rank panel",
+      "exampleInput": "inputs/keyword-rank-tracker.json",
+      "inputSubsetSchema": "schemas/keyword-rank-tracker.schema.json",
+      "outputFieldsToInspect": [
+        "keyword",
+        "found",
+        "targetRank",
+        "targetRankAbsolute",
+        "checkedAt",
+        "checkUrl",
+        "providerTaskId"
+      ],
+      "limit": "Not found means not observed within selected depth. Managed provider access must be available; do not supply credentials in input. If unavailable, use SERP sampling with its narrower limits.",
+      "liveAcceptance": "not_run"
+    },
+    {
+      "actor": "khadinakbar/website-backlink-checker",
+      "actorId": "rCohK9eJbjiovPN6s",
+      "public": true,
+      "verifiedAt": "2026-10-11",
+      "contractSource": "https://apify.com/khadinakbar/website-backlink-checker",
+      "verifiedBuild": {
+        "number": "0.1.2",
+        "id": "wnDuwfaprrBJR108n"
+      },
+      "use": "bounded backlink sample",
+      "exampleInput": "inputs/website-backlink-checker.json",
+      "inputSubsetSchema": "schemas/website-backlink-checker.schema.json",
+      "outputFieldsToInspect": [
+        "sourceUrl",
+        "targetUrl",
+        "anchor",
+        "isDofollow",
+        "firstSeen",
+        "fetchedAt"
+      ],
+      "limit": "Returned samples are not full totals. Retain provider/index and filter context.",
+      "liveAcceptance": "not_run"
+    },
+    {
+      "actor": "khadinakbar/g2-product-reviews-scraper",
+      "actorId": "FwIxRhXDEbykgdeqc",
+      "public": true,
+      "verifiedAt": "2026-10-11",
+      "contractSource": "https://apify.com/khadinakbar/g2-product-reviews-scraper",
+      "verifiedBuild": {
+        "number": "1.2.2",
+        "id": "BsvaC7eHgGDD3WS11"
+      },
+      "use": "sampled product and review records",
+      "exampleInput": "inputs/g2-product-reviews-scraper.json",
+      "inputSubsetSchema": "schemas/g2-product-reviews-scraper.schema.json",
+      "outputFieldsToInspect": [
+        "recordType",
+        "reviewUrl",
+        "rating",
+        "date",
+        "pros",
+        "cons"
+      ],
+      "limit": "Separate product rows from reviews, deduplicate, report sample denominator, and remove unrelated reviewer identifiers.",
+      "liveAcceptance": "not_run"
+    },
+    {
+      "actor": "khadinakbar/capterra-reviews-scraper",
+      "actorId": "vPxFQ4unR0IzHFm9H",
+      "public": true,
+      "verifiedAt": "2026-10-11",
+      "contractSource": "https://apify.com/khadinakbar/capterra-reviews-scraper",
+      "verifiedBuild": {
+        "number": "1.1.9",
+        "id": "axM1fQROQpyZTRtHG"
+      },
+      "use": "sampled product and review records",
+      "exampleInput": "inputs/capterra-reviews-scraper.json",
+      "inputSubsetSchema": "schemas/capterra-reviews-scraper.schema.json",
+      "outputFieldsToInspect": [
+        "recordType",
+        "reviewUrl",
+        "rating",
+        "date",
+        "pros",
+        "cons"
+      ],
+      "limit": "Separate product rows from reviews, deduplicate, report sample denominator, and remove unrelated reviewer identifiers.",
+      "liveAcceptance": "not_run"
+    },
+    {
+      "actor": "khadinakbar/trustpilot-reviews-scraper",
+      "actorId": "AdXgrEqrRSjvp9q6u",
+      "public": true,
+      "verifiedAt": "2026-10-11",
+      "contractSource": "https://apify.com/khadinakbar/trustpilot-reviews-scraper",
+      "verifiedBuild": {
+        "number": "1.0.22",
+        "id": "gT8oczsXNZB6qzAca"
+      },
+      "use": "sampled company review themes",
+      "exampleInput": "inputs/trustpilot-reviews-scraper.json",
+      "inputSubsetSchema": "schemas/trustpilot-reviews-scraper.schema.json",
+      "outputFieldsToInspect": [
+        "reviewUrl",
+        "rating",
+        "reviewDate",
+        "text"
+      ],
+      "limit": "Filter/sort/window are part of the sample. Public review records may contain personal information; minimize it.",
+      "liveAcceptance": "not_run"
+    },
+    {
+      "actor": "khadinakbar/amazon-competitor-price-tracker",
+      "actorId": "YcsIkMSAtizGOmMev",
+      "public": true,
+      "verifiedAt": "2026-10-11",
+      "contractSource": "https://apify.com/khadinakbar/amazon-competitor-price-tracker",
+      "verifiedBuild": {
+        "number": "0.1.20",
+        "id": "cNOvyYA8mRKV8lWtG"
+      },
+      "use": "matched Amazon offer comparisons",
+      "exampleInput": "inputs/amazon-competitor-price-tracker.json",
+      "inputSubsetSchema": "schemas/amazon-competitor-price-tracker.schema.json",
+      "outputFieldsToInspect": [
+        "asin",
+        "price",
+        "currency",
+        "seller",
+        "stock"
+      ],
+      "limit": "Match variant, seller, fulfillment, tax, shipping and country before claiming undercutting. Webhook delivery is omitted and needs separate authorization.",
+      "liveAcceptance": "not_run"
+    }
+  ]
+}

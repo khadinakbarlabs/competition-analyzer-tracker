@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "amazon-competitor-price-tracker: credential-free recipe input subset",
+  "type": "object",
+  "properties": {
+    "referenceAsin": {
+      "type": "string",
+      "pattern": "^[A-Z0-9]{10}$"
+    },
+    "competitorAsins": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Z0-9]{10}$"
+      }
+    },
+    "country": {
+      "type": "string",
+      "enum": [
+        "US",
+        "UK",
+        "DE",
+        "FR",
+        "CA",
+        "ES",
+        "IT",
+        "JP",
+        "AU",
+        "IN",
+        "MX",
+        "BR",
+        "NL",
+        "SE",
+        "PL",
+        "TR",
+        "AE",
+        "SG"
+      ]
+    },
+    "maxCompetitors": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 50
+    },
+    "alertUndercutPercent": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 90
+    }
+  },
+  "required": [
+    "referenceAsin"
+  ],
+  "additionalProperties": false
+}

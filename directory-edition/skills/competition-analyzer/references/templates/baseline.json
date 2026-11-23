@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "projectId": "synthetic-competition-demo",
+  "createdAt": "2026-10-10T09:00:00Z",
+  "fixture": true,
+  "observations": [
+    {
+      "entity": "northstar.example",
+      "dimension": "pricing",
+      "metric": "advertised-starter-price",
+      "value": 20,
+      "unit": "USD/seat/month",
+      "kind": "claim",
+      "status": "ok",
+      "context": {
+        "currency": "USD",
+        "billing": "monthly",
+        "plan": "Starter",
+        "seatCount": 1,
+        "market": "US",
+        "tax": "excluded",
+        "shipping": "not-applicable"
+      },
+      "source": {
+        "url": "https://northstar.example/pricing",
+        "locator": "synthetic fixture observation; invented for demonstration"
+      },
+      "observedAt": "2026-10-10T08:00:00Z"
+    },
+    {
+      "entity": "northstar.example",
+      "dimension": "pricing",
+      "metric": "enterprise-price",
+      "value": null,
+      "unit": "USD/month",
+      "kind": "claim",
+      "status": "unknown",
+      "context": {
+        "currency": "USD",
+        "billing": "monthly",
+        "plan": "Enterprise"
+      },
+      "source": {
+        "url": "https://northstar.example/pricing",
+        "locator": "synthetic fixture observation; invented for demonstration"
+      },
+      "observedAt": "2026-10-10T08:00:00Z"
+    },
+    {
+      "entity": "northstar.example",
+      "dimension": "positioning",
+      "metric": "headline",
+      "value": "Reports in minutes",
+      "unit": "text",
+      "kind": "claim",
+      "status": "ok",
+      "context": {},
+      "source": {
+        "url": "https://northstar.example/features",
+        "locator": "synthetic fixture observation; invented for demonstration"
+      },
+      "observedAt": "2026-10-10T08:00:00Z"
+    },
+    {
+      "entity": "northstar.example",
+      "dimension": "feature",
+      "metric": "advertised-export-format",
+      "value": "CSV",
+      "unit": "text",
+      "kind": "claim",
+      "status": "ok",
+      "context": {},
+      "source": {
+        "url": "https://northstar.example/features",
+        "locator": "synthetic fixture observation; invented for demonstration"
+      },
+      "observedAt": "2026-10-10T08:00:00Z"
+    },
+    {
+      "entity": "harbor.example",
+      "dimension": "traffic",
+      "metric": "organicEtv",
+      "value": 12000,
+      "unit": "estimated organic visits/month",
+      "kind": "estimated",
+      "status": "ok",
+      "context": {
+        "country": "US",
+        "language": "en",
+        "provider": "synthetic-provider-A",
+        "period": "monthly"
+      },
+      "source": {
+        "url": "https://harbor.example/features",
+        "locator": "synthetic fixture observation; invented for demonstration"
+      },
+      "observedAt": "2026-10-10T08:00:00Z"
+    },
+    {
+      "entity": "harbor.example",
+      "dimension": "review",
+      "metric": "sampled-review-count",
+      "value": 10,
+      "unit": "reviews",
+      "kind": "measured",
+      "status": "ok",
+      "context": {
+        "reviewSample": "recent",
+        "filter": "all-stars",
+        "cutoff": "last3months"
+      },
+      "source": {
+        "url": "https://harbor.example/features",
+        "locator": "synthetic fixture observation; invented for demonstration"
+      },
+      "observedAt": "2026-10-10T08:00:00Z"
+    }
+  ]
+}

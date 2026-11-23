@@ -1,0 +1,15 @@
+{
+  "queries": [
+    "demo team chat alternatives"
+  ],
+  "maxResultsPages": 1,
+  "resultsPerPage": 10,
+  "countryCode": "US",
+  "languageCode": "en",
+  "includeAds": false,
+  "includeFeaturedSnippet": true,
+  "includePeopleAlsoAsk": false,
+  "includeRelatedSearches": false,
+  "includeKnowledgeGraph": false,
+  "maxConcurrency": 1
+}
